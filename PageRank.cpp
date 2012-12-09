@@ -35,3 +35,21 @@ instance()
     static PageRank m_instance;
     return m_instance;
 }
+
+void PageRank::
+setList( std::vector<std::string>& websites )
+{
+    m_origList = websites;
+}
+
+void PageRank::
+compute()
+{
+    m_compList = m_origList;
+}
+
+std::vector<std::string> PageRank::
+computedList()
+{
+    return m_compList;
+}

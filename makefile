@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -O1 -larmadillo
 OBJS = PageRank.o main.o
 EXEC = pr
 

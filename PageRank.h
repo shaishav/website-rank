@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <armadillo>
 
 // PageRank class implemented as a singleton implements Google's Page Rank algorithm and provides the ability to change the alpha factor 
 class PageRank {
@@ -28,6 +29,7 @@ class PageRank {
         std::vector<std::string> m_origList;
         std::vector<std::string> m_compList;
 
+        arma::mat computed_matrix;
 };
 
 
